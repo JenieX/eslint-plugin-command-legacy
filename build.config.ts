@@ -7,8 +7,11 @@ export default defineBuildConfig({
     'src/types',
     'src/commands.ts',
   ],
-  declaration: 'node16',
+  declaration: true,
   clean: true,
+  rollup: {
+    emitCJS: true,
+  },
   externals: [
     '@typescript-eslint/utils',
   ],

@@ -19,14 +19,47 @@
   ],
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.mjs",
-    "./config": "./dist/config.mjs",
-    "./commands": "./dist/commands.mjs",
-    "./types": "./dist/types.mjs"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./config": {
+      "types": "./dist/config.d.ts",
+      "import": "./dist/config.mjs",
+      "require": "./dist/config.cjs"
+    },
+    "./commands": {
+      "types": "./dist/commands.d.ts",
+      "import": "./dist/commands.mjs",
+      "require": "./dist/commands.cjs"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.cjs"
+    }
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.d.ts",
+        "./dist/*"
+      ],
+      "./config": [
+        "./dist/config.d.ts"
+      ],
+      "./commands": [
+        "./dist/commands.d.ts"
+      ],
+      "./types": [
+        "./dist/types.d.ts"
+      ]
+    }
+  },
   "files": [
     "dist"
   ],
