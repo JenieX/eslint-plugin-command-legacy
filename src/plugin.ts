@@ -5,7 +5,7 @@ import BuiltinRules, { createRuleWithCommands } from './rule'
 
 export function createPluginWithCommands(options: ESLintPluginCommandOptions = {}) {
   const {
-    name = 'command',
+    name = 'command-legacy',
   } = options
   const plugin = options.commands
     ? createRuleWithCommands(options.commands)

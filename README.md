@@ -56,6 +56,26 @@ const [
 
 Refer to the [documentation](https://eslint-plugin-command.antfu.me/) for more details.
 
+## Installation
+
+Install the eslint-plugin-command-legacy package:
+
+```
+npm i eslint-plugin-command-legacy -D
+```
+
+In your config .eslintrc.cjs:
+
+```js
+// .eslintrc.cjs
+module.exports = {
+  plugins: ['command-legacy'],
+  rules: {
+    'command-legacy/command': 1,
+  },
+}
+```
+
 ## Sponsors
 
 <p align="center">

@@ -8,7 +8,7 @@ export default function config(options: ESLintPluginCommandOptions = {}): Linter
     ? createPluginWithCommands(options)
     : defaultPlugin
   const {
-    name = 'command',
+    name = 'command-legacy',
   } = options
 
   // @keep-sorted

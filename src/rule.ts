@@ -5,7 +5,7 @@ import { createEslintRule } from './utils'
 
 export function createRuleWithCommands(commands: Command[]) {
   return createEslintRule<RuleOptions, MessageIds>({
-    name: 'command',
+    name: 'command-legacy',
     meta: {
       type: 'problem',
       docs: {
